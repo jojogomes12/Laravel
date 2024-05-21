@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Vue.js</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Aqui vamos usar o Vue.js para exibir uma mensagem -->
+    <p>{{ nome }}</p>
+    <input type="text" v-model="nome" >
+  </div>
+
+  <!-- O script Vue.js -->
+  <script>
+    // Inicialize o Vue
+    new Vue({
+      el: '#app', // Especifica o elemento HTML onde o Vue será montado
+      data: {
+        nome: 'Olá, Vue.js!' // Define os dados que o Vue irá controlar
+      }
+    });
+  </script>
+</body>
+</html>
